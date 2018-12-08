@@ -18,8 +18,8 @@ class InferenceConfig(coco.CocoConfig):
 
 def main():
     parse = argparse.ArgumentParser()
-    parse.add_argument("--image", type=str, default='media/ski.jpg')
-    parse.add_argument('--video', type=str, default='media/human.mp4')
+    parse.add_argument("--image", type=str)
+    parse.add_argument('--video', type=str)
     args = parse.parse_args()
 
     ROOT_DIR = os.getcwd()
@@ -27,12 +27,8 @@ def main():
     MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
     COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
-    # Download COCO trained weights from Releases if needed
     if not os.path.exists(COCO_MODEL_PATH):
-        utils.download_trained_weights(COCO_MODEL_PATH)
-
-    # COCO_DIR = "images"  # TODO: enter value here
-    # IMAGE_DIR = os.path.join(ROOT_DIR, "images")
+        raise AssertionError('please download the pre-trained model')
 
     colorsFile = "colors.txt"
     with open(colorsFile, 'rt') as f:
