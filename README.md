@@ -21,7 +21,7 @@ then,
 ```bash
 $ cd MaskRCNN-Keypoint-Demo
 ```
-download the **pre-trained model**([baiduyun](https://pan.baidu.com/s/19foQjAu3KSFsIooPuSLAbw), [google drive](https://drive.google.com/open?id=1NvayrcxR9v0kVeH-qRPfQR5mQlbOPQvt),[dropbox](https://www.dropbox.com/s/5ctrg3br94srrx9/mask_rcnn_coco.h5)) in the MaskRCNN-Keypoint-Demo folder.
+download the **pre-trained model**([baiduyun](https://pan.baidu.com/s/1C3o10VclGQy42UZu2dsl1w),[dropbox](https://www.dropbox.com/s/5ctrg3br94srrx9/mask_rcnn_coco.h5)) in the MaskRCNN-Keypoint-Demo folder.
 
 finally, you have two choices:
 ```bash
